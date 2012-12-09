@@ -1,13 +1,46 @@
 {
     "name": "smoke/smoke",
+    "type": "library",
+    "version": "dev-master",
     "description": "My libraries, tools and other for extending and supporting Zend Framework, Mad (maintainable-framework) and other tools I use.",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Radoslav Kirilov",
             "email": "rkirilow@gmail.com"
         }
     ],
+    "keywords": [
+        "zf1",
+        "zend framework",
+        "framework",
+        "maintainable",
+        "smoke"
+    ],
+    "homepage": "https://github.com/smoke/smoke",
     "require": {
-
-    }
+        "php": ">=5.1.4"
+    },
+    "require-dev": {
+        "smoke/maintainable-framework": "@dev"
+    },
+    "suggest": {
+        "smoke/maintainable-framework": "Smoke`s maintainable-framework fork"
+    },
+    "autoload": {
+        "psr-0": {
+            "Smoke": "library/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/smoke/maintainable-framework"
+        }
+    ]
 }
