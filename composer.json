@@ -32,7 +32,6 @@
             "Smoke": "library/"
         }
     },
-    // include-path will be needed until the library is refactored to ommit require_once usage
     "include-path": ["library/"],
     "extra": {
         "branch-alias": {
